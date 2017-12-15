@@ -30,5 +30,18 @@ def triangle(rows):
         return 0
     return triangle(rows-1)+rows
 
+def sumDigits(n):
+    if n==0:
+        return 0
+    return n%10+sumDigits(n//10)
 
+def count7(n):
+    if n==7:
+        return 1
+    return n%10//7+count7(n//10)
 
+def count8(n):
+    if n==8:
+        return 1
+    return n%10//8+count8(n//10)
+    print(count8(8585))
